@@ -97,3 +97,28 @@ menuitems.forEach((item,index)=>{
         })
     })
 })
+currentcolor.forEach((color,index)=>{
+  color.addEventListener("click",()=>{
+    currentimg.src=choosenproduct.colors[index].img
+  })
+})
+currentsize.forEach((size,index)=>{
+  size.addEventListener("click",()=>{
+    currentsize.forEach((size,index)=>{
+      size.style.backgroundColor="white";
+      size.style.color="black";
+    })
+    size.style.backgroundColor="black";
+    size.style.color="white";
+  })
+})
+const productbtn=document.querySelector(".productbutton")
+const payment=document.querySelector(".payment")
+const close=document.querySelector(".close")
+
+productbtn.addEventListener("click",()=>{
+  payment.style.display="flex";
+})
+close.addEventListener("click",()=>{
+  payment.style.display="none";
+})

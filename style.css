@@ -42,13 +42,18 @@ nav{
     cursor:pointer;
     color:lightgrey;
 }
+.menuitem:hover{
+    border-bottom:1px solid green;
+}
 .slider{
     background:url(data:image/jpeg;base64,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);
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    overflow: hidden;
 }
 .sliderwrapper{
     display: flex;
     width:500vw;
+    transition: all 1.5s ease-in-out;
 }
 .slideritem{
     width: 100vw;
@@ -56,6 +61,15 @@ nav{
     align-items: center;
     justify-content: center;
     position: relative;
+}
+.sliderimg{
+    z-index:1;
+}
+.sliderbg{
+    width:750px;
+    height:750px;
+    border-radius:50%;
+    position:absolute;
 }
 .slidertitle{
     position:absolute;
@@ -65,6 +79,7 @@ nav{
     font-size: 70px;
     font-weight: 900;
     text-align:center;
+    z-index:1;
 }
 .sliderprice{
     position:absolute;
@@ -74,4 +89,133 @@ nav{
     font-size: 32px;
     font-weight: 900;
     text-align:center;
+    border:1px solid gray;
+}
+.buybutton{
+    position:absolute;
+    top:55%;
+    right:15%;
+    color:aliceblue;
+    font-size: 30px;
+    font-weight: 900;
+    border:1px solid gray;
+    z-index:1;
+    cursor: pointer;
+    background-color: black;
+}
+.buybutton:hover{
+    background-color:white;
+    color:black;
+}
+.slideritem:nth-child(1) .sliderbg{
+    background-color: #369e62;
+}
+.slideritem:nth-child(2) .sliderbg{
+    background-color: rebeccapurple;
+}
+.slideritem:nth-child(3) .sliderbg{
+    background-color: teal;
+}
+.slideritem:nth-child(4) .sliderbg{
+    background-color: cornflowerblue;
+}
+.slideritem:nth-child(5) .sliderbg{
+    background-color: rgb(124,115,80);
+}
+.slideritem:nth-child(1) .sliderprice{
+    background-color: #369e62;
+}
+.slideritem:nth-child(2) .sliderprice{
+    background-color: rebeccapurple;
+}
+.slideritem:nth-child(3) .sliderprice{
+    background-color: teal;
+}
+.slideritem:nth-child(4) .sliderprice{
+    background-color: cornflowerblue;
+}
+.slideritem:nth-child(5) .sliderprice{
+    background-color: rgb(124,115,80);
+}
+.features{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+.featureicon{
+    width:50px;
+    height:50px;
+}
+.featuretitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin:20px;
+}
+.featuredescription{
+    color:gray;
+    width:50%;
+    height:100px;
+}
+.products{
+    height:100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
+}
+.productimg{
+    width:50%;
+}
+.productdetails{
+    position:absolute;
+    top:10%;
+    right:0%;
+    width:40%;
+    padding:50px;
+}
+.productstitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+.productDesc{
+    font-size:24px;
+    color:gray;
+}
+.colors,.sizes{
+    display:flex;
+    margin-bottom: 10px;
+}
+.color{
+    width:32px;
+    height:32px;
+    border-radius: 5px;
+    background-color:black;
+    margin-right:10px;
+    cursor:pointer;
+}
+.color:last-child{
+    background-color:darkblue;
+}
+.size{
+    padding:5px 20px;
+    border:1px solid black;
+    margin-right:10px;
+    cursor:pointer;
+    font-size: 20px;
+}
+.productbutton{
+    float:right;
+    padding:10px 20px;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+.productbutton:hover{
+    background-color: white;
+    color:black;
 }

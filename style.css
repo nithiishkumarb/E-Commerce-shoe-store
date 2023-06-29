@@ -291,3 +291,40 @@ label{
     justify-content: center;
     cursor: pointer;
 }
+.gallery{
+    padding:50px;
+    display:flex;
+}
+.galleryitem{
+    flex:1;
+    padding:50px;
+}
+.galleryimg{
+    width:100%;
+}
+.newseason{
+    display:flex;
+}
+.newseasonitem{
+    flex:1;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nsimg{
+    width:100%;
+    height:500px;
+}
+.nstitle{
+    font-size: 50px;
+}
+.nsbutton{
+    padding:15px;
+    font-weight:600;
+    cursor:pointer;
+    border-radius: 5px;
+}
